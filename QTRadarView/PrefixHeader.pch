@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  QTRadarView
+//
+//  Created by QT on 2020/12/7.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#define main_Width              [[UIScreen mainScreen] bounds].size.width
+#define main_Height             [[UIScreen mainScreen] bounds].size.height
+#define IS_LandScape            (main_Width)>(main_Height)
+#define kWidthScale             ((IS_LandScape)?(main_Width/1280):(main_Width/720))
+
+#endif /* PrefixHeader_pch */
