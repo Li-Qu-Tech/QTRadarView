@@ -27,8 +27,8 @@
     NSMutableArray *tempArr = [NSMutableArray array];
     
     //可以任意改变多边形
-    for (NSInteger i = 0; i < 8; i++) {
-    //for (NSInteger i = 0; i < 6; i++) {
+//    for (NSInteger i = 0; i < 8; i++) {
+    for (NSInteger i = 0; i < 6; i++) {
     //for (NSInteger i = 0; i < 5; i++) {
         
         QTRadarModel *model = [QTRadarModel new];
